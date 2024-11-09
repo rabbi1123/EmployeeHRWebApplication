@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HRApplication.Application.Features.Employee.Requests.Commands
 {
-    public class DeleteEmployeeCommand : IRequest
+    public class DeleteEmployeeCommand() : IRequest
     {
         public int Id { get; set; }
     }

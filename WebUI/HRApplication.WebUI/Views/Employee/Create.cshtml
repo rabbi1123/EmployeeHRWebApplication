@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Create Employee";
+}
+
+<h2>Upload XML File</h2>
+
+@using (Html.BeginForm("Index", "Employee", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label for="file">Select XML File:</label>
+    <input type="file" name="file" id="file" />
+    <input type="submit" value="Upload" class="btn btn-primary" />
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color:red;">@ViewBag.ErrorMessage</p>
+}

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HRApplication.Application.Features.Employee.Requests.Commands
 {
-    public class UpdateEmployeeCommand : IRequest<Unit>
+    public class UpdateEmployeeCommand() : IRequest<Unit>
     {
         public EmployeeDto EmployeeDto { get; set; }
     }
